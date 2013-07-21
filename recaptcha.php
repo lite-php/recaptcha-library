@@ -18,7 +18,7 @@ class ReCAPTCHA_Library
 	/**
 	 * API Server endpoint
 	 */
-	const API_SERVER = "//www.google.com/recaptcha/api";
+	const API_SERVER = "//api.recaptcha.net/";
 
 	/**
 	 * Varifiy Server
@@ -76,7 +76,7 @@ class ReCAPTCHA_Library
 		/**
 		 * If we have an error, we need to append that to our url
 		 */
-		$curl = self::API_SERVER . '/challange?' . http_build_query($params, '', '&amp;');
+		$curl = self::API_SERVER . '/challenge?' . http_build_query($params, '', '&amp;');
 
 		/**
 		 * Create the noscript
